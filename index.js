@@ -1,4 +1,13 @@
 
+/**
+ * Return true if string equal to an other string or array index of an other array.
+ *
+ * @param {String|Array} arg1
+ * @param {String}Array arg2
+ * @return {Boolean}
+ * @api public
+ */
+
 module.exports = (arg1, arg2) => {
   const arr1 = [].concat(arg1)
   if (typeof arg2 === 'string') {
@@ -9,6 +18,15 @@ module.exports = (arg1, arg2) => {
   }
   return false
 }
+
+/**
+ * Return true if all items of arr1 are index of arr2.
+ *
+ * @param {Array} arr1
+ * @param {Array} arr2
+ * @return {Boolean}
+ * @api private
+ */
 
 function contains (arr1, arr2) {
   let result = true
