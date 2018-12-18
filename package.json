@@ -20,7 +20,8 @@
     "array",
     "string",
     "equal",
-    "index"
+    "index",
+    "contain"
   ],
   "author": "Olivier Wietrich",
   "license": "MIT",
