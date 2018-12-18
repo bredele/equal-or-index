@@ -5,16 +5,24 @@
 const test = require('tape')
 const compare = require('..')
 
-test('should return true if string is contained in array', assert => {
-  assert.plan(1)
-  assert.equal(
-    compare(['olivier', 'gabriel'], 'olivier'),
-    true
-  )
+test('array <=> string', assert => {
+  assert.plan(2)
+  assert.equal(compare(['olivier', 'gabriel'], 'olivier'), true)
+  assert.equal(compare('olivier', ['olivier', 'gabriel']), true)
 })
 
-test('should return true if string equal to string', assert => {
-  assert.plan(2)
+test('string <=> string', assert => {
+  assert.plan(3)
   assert.equal(compare('oliviera', 'olivier'), false)
   assert.equal(compare('olivier', 'olivier'), true)
+  assert.equal(compare('olivier', 'oliviera'), false)
+})
+
+test('array <=> array', assert => {
+  assert.plan(5)
+  assert.equal(compare(['olivier', 'gabriel'], ['olivier', 'gabriel']), true)
+  assert.equal(compare(['olivier', 'gabriel'], ['gabriel', 'olivier']), true)
+  assert.equal(compare(['olivier', 'gabriel', 'klara'], ['olivier', 'gabriel']), true)
+  assert.equal(compare(['olivier', 'gabriel'], ['olivier', 'gabriel', 'klara']), false)
+  assert.equal(compare(['olivier'], ['gabriel']), false)
 })
