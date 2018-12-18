@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/bredele/equal-or-index/issues"
   },
-  "homepage": "https://github.com/bredele/equal-or-index#readme"
+  "homepage": "https://github.com/bredele/equal-or-index#readme",
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
 }
