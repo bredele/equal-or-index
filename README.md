@@ -1,12 +1,11 @@
 # equal-or-index
 
-
 [![Build Status](https://travis-ci.org/bredele/equal-or-index.svg?branch=master)](https://travis-ci.org/bredele/equal-or-index)
  [![NPM](https://img.shields.io/npm/v/equal-or-index.svg)](https://www.npmjs.com/package/equal-or-index)
  [![Downloads](https://img.shields.io/npm/dm/equal-or-index.svg)](http://npm-stat.com/charts.html?package=equal-or-index)
  [![pledge](https://bredele.github.io/contributing-guide/community-pledge.svg)](https://github.com/bredele/contributing-guide/blob/master/guidelines.md)
 
-Match URI query parameters with given object
+Test if string are equal, if string index of array or array items index of an other array.
 
 ## Usage
 

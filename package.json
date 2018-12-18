@@ -1,7 +1,7 @@
 {
   "name": "equal-or-index",
   "version": "1.0.0",
-  "description": "Compare an array with a string, a string with a string or an array with an other array",
+  "description": "Test if string are equal, if string index of array or array items index of an other array.",
   "main": "index.js",
   "directories": {
     "test": "test"
