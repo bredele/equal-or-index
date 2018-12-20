@@ -31,5 +31,8 @@
   "homepage": "https://github.com/bredele/equal-or-index#readme",
   "devDependencies": {
     "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "array-include": "^1.0.0"
   }
 }

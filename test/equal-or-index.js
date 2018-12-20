@@ -12,10 +12,11 @@ test('array <=> string', assert => {
 })
 
 test('string <=> string', assert => {
-  assert.plan(3)
+  assert.plan(4)
   assert.equal(compare('oliviera', 'olivier'), false)
   assert.equal(compare('olivier', 'olivier'), true)
   assert.equal(compare('olivier', 'oliviera'), false)
+  assert.equal(compare('oliver', 'olivier'), false)
 })
 
 test('array <=> array', assert => {
