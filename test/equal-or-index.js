@@ -20,10 +20,12 @@ test('string <=> string', assert => {
 })
 
 test('array <=> array', assert => {
-  assert.plan(5)
+  assert.plan(7)
   assert.equal(compare(['olivier', 'gabriel'], ['olivier', 'gabriel']), true)
   assert.equal(compare(['olivier', 'gabriel'], ['gabriel', 'olivier']), true)
   assert.equal(compare(['olivier', 'gabriel', 'klara'], ['olivier', 'gabriel']), true)
   assert.equal(compare(['olivier', 'gabriel'], ['olivier', 'gabriel', 'klara']), false)
   assert.equal(compare(['olivier'], ['gabriel']), false)
+  assert.equal(compare(['olivier'], ['olivier', 'gabriel']), false)
+  assert.equal(compare(['olivier', 'gabriel'], ['olivier']), true)
 })
